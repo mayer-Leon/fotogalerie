@@ -1,3 +1,13 @@
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+function changeContentForMobile() {
+    if (isMobileDevice()) {
+      desktopMobile.innerHTML = 'Klick auf die Fotos um ihre Kameraeinstellungen anzuzeigen!';
+    }
+}
+
 function pic03434Function() {
     pic03434Hover.style.display = "flex";
 }
@@ -28,3 +38,5 @@ function pic03279Function() {
 function pic03279FunctionOut() {
     pic03279Hover.style.display = "none";
 }
+
+changeContentForMobile();
