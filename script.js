@@ -4,7 +4,7 @@ function isMobileDevice() {
 
 function changeContentForMobile() {
     if (isMobileDevice()) {
-      desktopMobile.innerHTML = 'Klick auf die Fotos um ihre Kameraeinstellungen anzuzeigen!';
+      desktopMobile.innerHTML = 'Klick auf die Fotos um ihre Kameraeinstellungen zu sehen!';
     }
 }
 
