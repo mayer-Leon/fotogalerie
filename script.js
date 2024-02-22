@@ -4,7 +4,7 @@ function isMobileDevice() {
 
 function changeContentForMobile() {
     if (isMobileDevice()) {
-      desktopMobile.innerHTML = 'Klick auf die Fotos um ihre Kameraeinstellungen zu sehen!';
+      desktopMobile.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen!';
     }
 }
 
@@ -32,11 +32,27 @@ function pic03281FunctionOut() {
 }
 
 
+function pic03878Function() {
+    pic03878Hover.style.display = "flex";
+}
+function pic03878FunctionOut() {
+    pic03878Hover.style.display = "none";
+}
+
+
 function pic03279Function() {
     pic03279Hover.style.display = "flex";
 }
 function pic03279FunctionOut() {
     pic03279Hover.style.display = "none";
+}
+
+
+function pic03828Function() {
+    pic03828Hover.style.display = "flex";
+}
+function pic03828FunctionOut() {
+    pic03828Hover.style.display = "none";
 }
 
 changeContentForMobile();
