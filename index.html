@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon Mayer Fotogalerie</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    align-self: center;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #a7a7a7;
+    margin-top: 3px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.twoRow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.horHor {
+    width: 50%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hor {
+    width: 69.23%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.ver {
+    width: 30.77%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+img {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+#pic03434 {
+    width: 100%;
+}
+
+.metaData {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: #00000095;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.data {
+    width: 40%;
+    height: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+    </style>
+</head>
+<body>
+    <h1>Fotogalerie:</h1>
+    <h2>Leon Mayer</h2>
+    <h3>Hover über Fotos, um ihre Kameraeinstellungen zu sehen!</h3>
+
+<div class="twoRow">
+    <div class="horHor" onmouseover="pic03434Function()" onmouseout="pic03434FunctionOut()";>
+        <img src="Fotos/PIC03434.jpg" id="pic03434" oncontextmenu="return false";>
+        <div class="metaData" id="pic03434Hover";>
+            <div class="balken"></div>
+            <p class="data">52.5mm</p>
+            <p class="data">ISO 160</p> <break></break>
+            <p class="data">1/1250 Sek.</p>
+            <p class="data">f/2.8</p>
+        </div>
+    </div>
+
+    <div class="horHor" onmouseover="pic03587Function()" onmouseout="pic03587FunctionOut()";>
+        <img src="Fotos/PIC03587.jpg" id="pic03587" oncontextmenu="return false";>
+        <div class="metaData" id="pic03587Hover";>
+            <div class="balken"></div>
+            <p class="data">52.5mm</p>
+            <p class="data">ISO 160</p> <break></break>
+            <p class="data">1/1000 Sek.</p>
+            <p class="data">f/2.8</p>
+        </div>
+    </div>
+</div>
+
+<div class="twoRow">
+    <div class="horHor" onmouseover="pic03281Function()" onmouseout="pic03281FunctionOut()";>
+        <img src="Fotos/PIC03281.jpg" id="pic03281" oncontextmenu="return false";>
+        <div class="metaData" id="pic03281Hover";>
+            <div class="balken"></div>
+            <p class="data">52.5mm</p>
+            <p class="data">ISO 1600</p> <break></break>
+            <p class="data">1/4000 Sek.</p>
+            <p class="data">f/2.8</p>
+        </div>
+    </div>
+
+    <div class="horHor" onmouseover="pic03279Function()" onmouseout="pic03279FunctionOut()";>
+        <img src="Fotos/PIC03279.jpg" id="pic03279" oncontextmenu="return false";>
+        <div class="metaData" id="pic03279Hover";>
+            <div class="balken"></div>
+            <p class="data">52.5mm</p>
+            <p class="data">ISO 1600</p> <break></break>
+            <p class="data">1/4000 Sek.</p>
+            <p class="data">f/2.8</p>
+        </div>
+    </div>
+</div>
+
+<div class="twoRow">
+    <div class="hor" onmouseover="pic03828Function()" onmouseout="pic03828FunctionOut()";>
+        <img src="Fotos/PIC03828.jpg" id="pic03828" oncontextmenu="return false";>
+        <div class="metaData" id="pic03828Hover";>
+            <div class="balken"></div>
+            <p class="data">52.5mm</p>
+            <p class="data">ISO 1600</p> <break></break>
+            <p class="data">1/4000 Sek.</p>
+            <p class="data">f/2.8</p>
+        </div>
+
+        <div class="ver" onmouseover="pic03916Function()" onmouseout="pic03916FunctionOut()";>
+            <img src="Fotos/PIC03916.jpg" id="pic03916" oncontextmenu="return false";>
+            <div class="metaData" id="pic03916Hover";>
+                <div class="balken"></div>
+                <p class="data">52.5mm</p>
+                <p class="data">ISO 1600</p> <break></break>
+                <p class="data">1/4000 Sek.</p>
+                <p class="data">f/2.8</p>
+            </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
