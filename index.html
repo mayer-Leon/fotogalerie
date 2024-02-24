@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotogalerie Leon Mayer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="Logo-Elipse.png">
+    <link rel="icon" type="image/x-icon" href="Logo3-Elipse.png">
 </head>
 <body>
     <h1>Fotogalerie:</h1>
     <h2>Leon Mayer</h2>
-    <h3 id="desktopMobile">Hover über Fotos um ihre Kameraeinstellungen zu sehen!</h3>
+    <h3 id="desktopMobile">Hover über Fotos um ihre Kameraeinstellungen zu sehen!</h3> <button type="button" id="deactivateButton" onclick="deactivateHover()">Deaktivieren</button>
+    <button type="button" id="activateButton" onclick="activateHover()">Kameraeinstellungen anzeigen</button>
+    <p id="desktopMovileClick">Klick auf Fotos, um sie im Vollbild zu sehen.</p>
+
+    <hr>
 
 <div class="twoRow">
-    <div class="horHor" onmouseover="pic03434Function()" onmouseout="pic03434FunctionOut()";>
-        <img src="Fotos/PIC03434.jpg" id="pic03434" oncontextmenu="return false";>
-        <div class="metaData" id="pic03434Hover";>
+    <div class="horHor" id="testOne" onmouseover="pic03587Function()" onmouseout="pic03587FunctionOut()";>
+        <img src="Fotos/PIC03587.jpg" id="pic03587" oncontextmenu="return false";>
+        <div class="metaData" id="pic03587Hover";>
             <div class="balken"></div>
             <p class="data">52.5 mm</p>
             <p class="data">ISO 160</p> <break></break>
@@ -24,9 +28,9 @@
         </div>
     </div>
 
-    <div class="horHor" onmouseover="pic03587Function()" onmouseout="pic03587FunctionOut()";>
-        <img src="Fotos/PIC03587.jpg" id="pic03587" oncontextmenu="return false";>
-        <div class="metaData" id="pic03587Hover";>
+    <div class="horHor" onmouseover="pic03434Function()" onmouseout="pic03434FunctionOut()";>
+        <img src="Fotos/PIC03434.jpg" id="pic03434" oncontextmenu="return false";>
+        <div class="metaData" id="pic03434Hover";>
             <div class="balken"></div>
             <p class="data">52.5 mm</p>
             <p class="data">ISO 160</p> <break></break>

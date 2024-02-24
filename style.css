@@ -18,8 +18,19 @@ h2 {
 
 h3 {
     font-weight: 400;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    height: 25px;
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+hr {
+    width: 80%;
 }
 
 .twoRow {
@@ -62,3 +73,50 @@ img {
     text-align: center;
     font-weight: 700;
 }
+
+button {
+    color: #ffffff;
+    background-color: #5a5a5a;
+    font-size: .9rem;
+    font-weight: 500;
+    height: 22px;
+    width: 100px;
+
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+
+    margin-top: 0px;
+}
+
+button:hover {
+    width: 110px;
+    transition: .2s;
+}
+
+button:active {
+    width: 130px;
+    transition: .1s;
+}
+
+#activateButton {
+    font-size: .95rem;
+    width: 250px;
+    height: 25px;
+
+    margin-top: 14px;
+    margin-bottom: 15px;
+
+    display: none;
+}
+
+#activateButton:hover {
+    width: 262px;
+}
+
+#activateButton:active {
+    width: 280px;
+}
+
+/*53px*/

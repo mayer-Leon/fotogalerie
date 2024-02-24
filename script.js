@@ -8,12 +8,24 @@ function changeContentForMobile() {
     }
 }
 
-function pic03434Function() {
-    pic03434Hover.style.display = "flex";
+function adjustContent() {
+    let windowWidth = window.innerWidth;
+    let horizontal = document.querySelectorAll(".horHor");
+
+    if (windowWidth < 768) {
+        horizontal.forEach(element => {
+            element.style.width = "90%";
+        });
+    } else {
+        horizontal.forEach(element => {
+            element.style.width = "45%";
+        });
+    }
 }
-function pic03434FunctionOut() {
-    pic03434Hover.style.display = "none";
-}
+
+
+window.onload = adjustContent();
+window.onresize = adjustContent();
 
 
 function pic03587Function() {
@@ -21,6 +33,14 @@ function pic03587Function() {
 }
 function pic03587FunctionOut() {
     pic03587Hover.style.display = "none";
+}
+
+
+function pic03434Function() {
+    pic03434Hover.style.display = "flex";
+}
+function pic03434FunctionOut() {
+    pic03434Hover.style.display = "none";
 }
 
 
@@ -53,6 +73,20 @@ function pic03828Function() {
 }
 function pic03828FunctionOut() {
     pic03828Hover.style.display = "none";
+}
+
+function deactivateHover() {
+    document.querySelectorAll(".metaData").forEach(element => {
+        element.style.backgroundColor = "transparent";
+        element.style.color = "transparent";
+    });
+    desktopMobile.style.display = "none";
+    deactivateButton.style.display = "none";
+    activateButton.style.display = "inline";
+}
+
+function activateHover() {
+    location.reload();
 }
 
 changeContentForMobile();
