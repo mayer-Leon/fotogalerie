@@ -35,50 +35,63 @@ function adjustContent() {
 
 
 function pic03587Function() {
-    pic03587Hover.style.display = "flex";
+    pic03587Hover.style.opacity = "1";
+    pic03587Hover.style.transition = "0.2s";
+
 }
 function pic03587FunctionOut() {
-    pic03587Hover.style.display = "none";
+    pic03587Hover.style.opacity = "0";
+    pic03587Hover.style.transition = "0.2s";
 }
 
 
 function pic03434Function() {
-    pic03434Hover.style.display = "flex";
+    pic03434Hover.style.opacity = "1";
+    pic03434Hover.style.transition = "0.2s";
 }
 function pic03434FunctionOut() {
-    pic03434Hover.style.display = "none";
+    pic03434Hover.style.opacity = "0";
+    pic03434Hover.style.transition = "0.2s";
 }
 
 
 function pic03281Function() {
-    pic03281Hover.style.display = "flex";
+    pic03281Hover.style.opacity = "1";
+    pic03281Hover.style.transition = "0.2s";
 }
 function pic03281FunctionOut() {
-    pic03281Hover.style.display = "none";
+    pic03281Hover.style.opacity = "0";
+    pic03281Hover.style.transition = "0.2s";
 }
 
 
 function pic03878Function() {
-    pic03878Hover.style.display = "flex";
+    pic03878Hover.style.opacity = "1";
+    pic03878Hover.style.transition = "0.2s";
 }
 function pic03878FunctionOut() {
-    pic03878Hover.style.display = "none";
+    pic03878Hover.style.opacity = "0";
+    pic03878Hover.style.transition = "0.2s";
 }
 
 
 function pic03279Function() {
-    pic03279Hover.style.display = "flex";
+    pic03279Hover.style.opacity = "1";
+    pic03279Hover.style.transition = "0.2s";
 }
 function pic03279FunctionOut() {
-    pic03279Hover.style.display = "none";
+    pic03279Hover.style.opacity = "0";
+    pic03279Hover.style.transition = "0.2s";
 }
 
 
 function pic03828Function() {
-    pic03828Hover.style.display = "flex";
+    pic03828Hover.style.opacity = "1";
+    pic03828Hover.style.transition = "0.2s";
 }
 function pic03828FunctionOut() {
-    pic03828Hover.style.display = "none";
+    pic03828Hover.style.opacity = "0";
+    pic03828Hover.style.transition = "0.2s";
 }
 
 function deactivateHover() {
