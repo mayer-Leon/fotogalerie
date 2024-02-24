@@ -83,6 +83,7 @@ function deactivateHover() {
     desktopMobile.style.display = "none";
     deactivateButton.style.display = "none";
     activateButton.style.display = "inline";
+    desktopMovbileClick.style.marginTop = "16px";
 }
 
 function activateHover() {
