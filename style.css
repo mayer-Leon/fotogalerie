@@ -19,7 +19,8 @@ h2 {
 
 h3 {
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 0;
     margin-bottom: 5px;
     height: 25px;
@@ -84,18 +85,22 @@ a {
     margin-right: 20px;
 }
 
-#deactivateButton:hover {
+#deactivateButton:hover, #activateButton:hover {
     cursor: pointer;
+    color: #ffffff;
 }
 
 #activateButton {
     background-color: #00000000;
     color: #c8c8c8;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-size: 1.1rem;
     display: none;
     margin-bottom: 10px;
 }
+
+
 
 /*53px*/
 
@@ -105,4 +110,9 @@ a {
     margin: auto;
     margin-top: 100px;
     width: 90%;
+}
+
+#top {
+    margin-left: 20px;
+    margin-right: 20px;
 }

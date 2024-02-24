@@ -12,20 +12,26 @@ function adjustContent() {
     let windowWidth = window.innerWidth;
     let horizontal = document.querySelectorAll(".horHor");
 
-    if (windowWidth < 768) {
+    
+    if (windowWidth <= 480) {
+        horizontal.forEach(element => {
+            element.style.width = "100%";
+        });
+    } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
             element.style.width = "90%";
         });
-    } else {
+    } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
             element.style.width = "45%";
         });
+    } else {
+        horizontal.forEach(element => {
+            element.style.width = "30%";
+        });
     }
+    
 }
-
-
-window.onload = adjustContent();
-window.onresize = adjustContent();
 
 
 function pic03587Function() {
@@ -91,3 +97,5 @@ function activateHover() {
 }
 
 changeContentForMobile();
+window.onload = adjustContent;
+window.onresize = adjustContent;
