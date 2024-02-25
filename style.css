@@ -3,9 +3,14 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #151515;
-    color: white;
+    color: #ffffff;
     align-self: center;
     text-align: center;
+}
+
+::selection {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 #title {
@@ -53,7 +58,7 @@ p {
 }
 
 hr {
-    width: 80%;
+    width: 85%;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -68,14 +73,18 @@ hr {
 .horHor {
     width: 45%;
     position: relative;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 
 img {
     border-radius: 5px;
     display: block;
     width: 100%;
-    box-shadow: 5px 5px 5px #000000;
+    box-shadow: 5px 5px 8px #000000;
+}
+
+.topic {
+    margin-top: 40px;
 }
 
 #mountains {
@@ -125,6 +134,13 @@ img {
     color: #a7a7a7;
     display: inline-block;
     margin-right: 20px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#leonMayer {
+    color: #bababa;
 }
 
 #homePage {
@@ -173,4 +189,10 @@ img {
 #top {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#liege, #hafen {
+    width: calc(90% + 10px);
+    position: relative;
+    margin-bottom: 1px;
 }
