@@ -16,6 +16,7 @@ function adjustContent() {
     if (windowWidth <= 480) {
         horizontal.forEach(element => {
             element.style.width = "100%";
+            liege.style.width = "100%";
         });
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
