@@ -170,6 +170,57 @@ function img08440FunctionOut() {
 }
 
 
+function img08172Function() {
+    img08172Hover.style.opacity = "1";
+    img08172Hover.style.transition = "0.2s";
+}
+function img08172FunctionOut() {
+    img08172Hover.style.opacity = "0";
+    img08172Hover.style.transition = "0.2s";
+}
+
+
+function img08309Function() {
+    img08309Hover.style.opacity = "1";
+    img08309Hover.style.transition = "0.2s";
+}
+function img08309FunctionOut() {
+    img08309Hover.style.opacity = "0";
+    img08309Hover.style.transition = "0.2s";
+}
+
+
+function img089391Function() {
+    img089391Hover.style.opacity = "1";
+    img089391Hover.style.transition = "0.2s";
+}
+function img089391FunctionOut() {
+    img089391Hover.style.opacity = "0";
+    img089391Hover.style.transition = "0.2s";
+}
+
+
+function img07931Function() {
+    img07931Hover.style.opacity = "1";
+    img07931Hover.style.transition = "0.2s";
+}
+function img07931FunctionOut() {
+    img07931Hover.style.opacity = "0";
+    img07931Hover.style.transition = "0.2s";
+}
+
+
+function img08915Function() {
+    img08915Hover.style.opacity = "1";
+    img08915Hover.style.transition = "0.2s";
+}
+function img08915FunctionOut() {
+    img08915Hover.style.opacity = "0";
+    img08915Hover.style.transition = "0.2s";
+}
+
+
+
 
 function deactivateHover() {
     document.querySelectorAll(".metaData").forEach(element => {

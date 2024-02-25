@@ -6,6 +6,9 @@ body {
     color: #ffffff;
     align-self: center;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 ::selection {
@@ -74,6 +77,16 @@ hr {
     width: 45%;
     position: relative;
     margin-bottom: 2px;
+}
+
+#hor41, #hor42, #hor43 {
+    width: 20%;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+#break1, #break2 {
+    width: 10%;
 }
 
 img {
@@ -185,7 +198,7 @@ img {
 }
 
 #großerBildschirm {
-    background-color: rgb(84, 84, 84);
+    background-color: #545454;
     width: 90%;
     margin: auto;
     border-radius: 5px;
@@ -204,11 +217,23 @@ img {
 /*53px*/
 
 #footer {
-    background-color: #2e2e2e;
-    height: 00px;
+    background-color: #2f2f2f;
+    height: 180px;
     margin: auto;
     margin-top: 100px;
-    width: 90%;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.footerText {
+    font-size: 0.8rem;
+}
+
+#logo {
+    width: 6%;
+    box-shadow: 0px 0px 0px;
+    margin: auto;
+    margin-top: 10px;
 }
 
 #top {
