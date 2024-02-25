@@ -65,16 +65,6 @@ function pic03281FunctionOut() {
 }
 
 
-function pic03878Function() {
-    pic03878Hover.style.opacity = "1";
-    pic03878Hover.style.transition = "0.2s";
-}
-function pic03878FunctionOut() {
-    pic03878Hover.style.opacity = "0";
-    pic03878Hover.style.transition = "0.2s";
-}
-
-
 function pic03279Function() {
     pic03279Hover.style.opacity = "1";
     pic03279Hover.style.transition = "0.2s";
