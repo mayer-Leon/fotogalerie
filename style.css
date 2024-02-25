@@ -127,6 +127,16 @@ img {
     text-align: center;
     font-weight: 600;
     font-size: 1.4rem;
+    margin-top: 10%;
+}
+
+.copyright {
+    width: 90%;
+    height: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 10%;
 }
 
 #deactivateButton, #activateButton {
