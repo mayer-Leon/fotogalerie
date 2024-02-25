@@ -17,13 +17,13 @@ function adjustContent() {
         horizontal.forEach(element => {
             element.style.width = "100%";
             liege.style.width = "100%";
-            großerBildschirm.style.display = "inline";
+            großerBildschirm.style.display = "block";
         });
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
             element.style.width = "90%";
             liege.style.width = "90%";
-            großerBildschirm.style.display = "inline";
+            großerBildschirm.style.display = "block";
         });
     } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
