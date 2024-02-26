@@ -9,6 +9,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    zoom: 95%;
 }
 
 ::selection {
@@ -76,7 +77,20 @@ hr {
 .horHor {
     width: 45%;
     position: relative;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
+}
+
+.verVer {
+    width: calc(30% - 3px);
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#abstand1, #abstand2 {
+    width: 10%;
+    position: relative;
+    margin-bottom: 0px;
+    display: none;
 }
 
 #hor41, #hor42, #hor43 {
@@ -230,7 +244,8 @@ img {
 }
 
 #logo {
-    width: 6%;
+    height: 60%;
+    width: auto;
     box-shadow: 0px 0px 0px;
     margin: auto;
     margin-top: 10px;
@@ -245,4 +260,8 @@ img {
     width: calc(90% + 10px);
     position: relative;
     margin-bottom: 1px;
+}
+
+body {
+    font-size: 90%;
 }

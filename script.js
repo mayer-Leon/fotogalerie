@@ -5,25 +5,33 @@ function isMobileDevice() {
 function changeContentForMobile() {
     if (isMobileDevice()) {
       desktopMobile.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
+      großerBildschirm.style.display = "block";
     }
 }
 
 function adjustContent() {
     let windowWidth = window.innerWidth;
     let horizontal = document.querySelectorAll(".horHor");
+    let vertical = document.querySelectorAll(".verVer");
 
     
     if (windowWidth <= 480) {
         horizontal.forEach(element => {
             element.style.width = "100%";
             liege.style.width = "100%";
-            großerBildschirm.style.display = "block";
+        });
+
+        vertical.forEach(element => {
+            element.style.width = "100%";
         });
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
             element.style.width = "90%";
             liege.style.width = "90%";
-            großerBildschirm.style.display = "block";
+        });
+
+        vertical.forEach(element => {
+            element.style.width = "90%";
         });
     } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
@@ -33,6 +41,12 @@ function adjustContent() {
         horizontal.forEach(element => {
             element.style.width = "30%";
             liege.style.width = "calc(90% + 20px)";
+            abstand2.style.display = "block";
+            abstand1.style.display = "block";
+        });
+
+        vertical.forEach(element => {
+            element.style.width = "calc(20% - 3px)";
         });
     }
     
@@ -217,6 +231,126 @@ function img08915Function() {
 function img08915FunctionOut() {
     img08915Hover.style.opacity = "0";
     img08915Hover.style.transition = "0.2s";
+}
+
+
+function img08244Function() {
+    img08244Hover.style.opacity = "1";
+    img08244Hover.style.transition = "0.2s";
+}
+function img08244FunctionOut() {
+    img08244Hover.style.opacity = "0";
+    img08244Hover.style.transition = "0.2s";
+}
+
+
+function img08076Function() {
+    img08076Hover.style.opacity = "1";
+    img08076Hover.style.transition = "0.2s";
+}
+function img08076FunctionOut() {
+    img08076Hover.style.opacity = "0";
+    img08076Hover.style.transition = "0.2s";
+}
+
+
+function img08048Function() {
+    img08048Hover.style.opacity = "1";
+    img08048Hover.style.transition = "0.2s";
+}
+function img08048FunctionOut() {
+    img08048Hover.style.opacity = "0";
+    img08048Hover.style.transition = "0.2s";
+}
+
+
+function img04748Function() {
+    img04748Hover.style.opacity = "1";
+    img04748Hover.style.transition = "0.2s";
+}
+function img04748FunctionOut() {
+    img04748Hover.style.opacity = "0";
+    img04748Hover.style.transition = "0.2s";
+}
+
+
+function img04663Function() {
+    img04663Hover.style.opacity = "1";
+    img04663Hover.style.transition = "0.2s";
+}
+function img04663FunctionOut() {
+    img04663Hover.style.opacity = "0";
+    img04663Hover.style.transition = "0.2s";
+}
+
+
+function img04967Function() {
+    img04967Hover.style.opacity = "1";
+    img04967Hover.style.transition = "0.2s";
+}
+function img04967FunctionOut() {
+    img04967Hover.style.opacity = "0";
+    img04967Hover.style.transition = "0.2s";
+}
+
+
+function img04933Function() {
+    img04933Hover.style.opacity = "1";
+    img04933Hover.style.transition = "0.2s";
+}
+function img04933FunctionOut() {
+    img04933Hover.style.opacity = "0";
+    img04933Hover.style.transition = "0.2s";
+}
+
+
+function img04699Function() {
+    img04699Hover.style.opacity = "1";
+    img04699Hover.style.transition = "0.2s";
+}
+function img04699FunctionOut() {
+    img04699Hover.style.opacity = "0";
+    img04699Hover.style.transition = "0.2s";
+}
+
+
+function img04913Function() {
+    img04913Hover.style.opacity = "1";
+    img04913Hover.style.transition = "0.2s";
+}
+function img04913FunctionOut() {
+    img04913Hover.style.opacity = "0";
+    img04913Hover.style.transition = "0.2s";
+}
+
+
+function img04691Function() {
+    img04691Hover.style.opacity = "1";
+    img04691Hover.style.transition = "0.2s";
+}
+function img04691FunctionOut() {
+    img04691Hover.style.opacity = "0";
+    img04691Hover.style.transition = "0.2s";
+}
+
+
+function img04688Function() {
+    img04688Hover.style.opacity = "1";
+    img04688Hover.style.transition = "0.2s";
+}
+function img04688FunctionOut() {
+    img04688Hover.style.opacity = "0";
+    img04688Hover.style.transition = "0.2s";
+}
+
+
+function img04754Function() {
+    img04754Hover.style.opacity = "1";
+    img04754Hover.style.transition = "0.2s";
+}
+function img04754FunctionOut() {
+    img04754Hover.style.opacity = "0";
+    img04754Hover.style.transition = "0.2s";
 }
 
 
