@@ -354,6 +354,66 @@ function img04754FunctionOut() {
 }
 
 
+function pic05543Function() {
+    pic05543Hover.style.opacity = "1";
+    pic05543Hover.style.transition = "0.2s";
+}
+function pic05543FunctionOut() {
+    pic05543Hover.style.opacity = "0";
+    pic05543Hover.style.transition = "0.2s";
+}
+
+
+function img00836Function() {
+    img00836Hover.style.opacity = "1";
+    img00836Hover.style.transition = "0.2s";
+}
+function img00836FunctionOut() {
+    img00836Hover.style.opacity = "0";
+    img00836Hover.style.transition = "0.2s";
+}
+
+
+function tac00262Function() {
+    tac00262Hover.style.opacity = "1";
+    tac00262Hover.style.transition = "0.2s";
+}
+function tac00262FunctionOut() {
+    tac00262Hover.style.opacity = "0";
+    tac00262Hover.style.transition = "0.2s";
+}
+
+
+function tac00332Function() {
+    tac00332Hover.style.opacity = "1";
+    tac00332Hover.style.transition = "0.2s";
+}
+function tac00332FunctionOut() {
+    tac00332Hover.style.opacity = "0";
+    tac00332Hover.style.transition = "0.2s";
+}
+
+
+function pic07159Function() {
+    pic07159Hover.style.opacity = "1";
+    pic07159Hover.style.transition = "0.2s";
+}
+function pic07159FunctionOut() {
+    pic07159Hover.style.opacity = "0";
+    pic07159Hover.style.transition = "0.2s";
+}
+
+
+function pic07143Function() {
+    pic07143Hover.style.opacity = "1";
+    pic07143Hover.style.transition = "0.2s";
+}
+function pic07143FunctionOut() {
+    pic07143Hover.style.opacity = "0";
+    pic07143Hover.style.transition = "0.2s";
+}
+
+
 
 
 function deactivateHover() {
