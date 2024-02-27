@@ -36,6 +36,7 @@ function adjustContent() {
     } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
             element.style.width = "45%";
+            referenceElement.parentNode.insertBefore(elementToMove, referenceElement);
         });
     } else {
         horizontal.forEach(element => {
@@ -411,6 +412,106 @@ function pic07143Function() {
 function pic07143FunctionOut() {
     pic07143Hover.style.opacity = "0";
     pic07143Hover.style.transition = "0.2s";
+}
+
+
+function pic07378Function() {
+    pic07378Hover.style.opacity = "1";
+    pic07378Hover.style.transition = "0.2s";
+}
+function pic07378FunctionOut() {
+    pic07378Hover.style.opacity = "0";
+    pic07378Hover.style.transition = "0.2s";
+}
+
+
+function pic06702Function() {
+    pic06702Hover.style.opacity = "1";
+    pic06702Hover.style.transition = "0.2s";
+}
+function pic06702FunctionOut() {
+    pic06702Hover.style.opacity = "0";
+    pic06702Hover.style.transition = "0.2s";
+}
+
+
+function tac00328Function() {
+    tac00328Hover.style.opacity = "1";
+    tac00328Hover.style.transition = "0.2s";
+}
+function tac00328FunctionOut() {
+    tac00328Hover.style.opacity = "0";
+    tac00328Hover.style.transition = "0.2s";
+}
+
+
+function tac00059Function() {
+    tac00059Hover.style.opacity = "1";
+    tac00059Hover.style.transition = "0.2s";
+}
+function tac00059FunctionOut() {
+    tac00059Hover.style.opacity = "0";
+    tac00059Hover.style.transition = "0.2s";
+}
+
+
+function pic03197Function() {
+    pic03197Hover.style.opacity = "1";
+    pic03197Hover.style.transition = "0.2s";
+}
+function pic03197FunctionOut() {
+    pic03197Hover.style.opacity = "0";
+    pic03197Hover.style.transition = "0.2s";
+}
+
+
+function pic03237Function() {
+    pic03237Hover.style.opacity = "1";
+    pic03237Hover.style.transition = "0.2s";
+}
+function pic03237FunctionOut() {
+    pic03237Hover.style.opacity = "0";
+    pic03237Hover.style.transition = "0.2s";
+}
+
+
+function dsc02909Function() {
+    dsc02909Hover.style.opacity = "1";
+    dsc02909Hover.style.transition = "0.2s";
+}
+function dsc02909FunctionOut() {
+    dsc02909Hover.style.opacity = "0";
+    dsc02909Hover.style.transition = "0.2s";
+}
+
+
+function pic03690Function() {
+    pic03690Hover.style.opacity = "1";
+    pic03690Hover.style.transition = "0.2s";
+}
+function pic03690FunctionOut() {
+    pic03690Hover.style.opacity = "0";
+    pic03690Hover.style.transition = "0.2s";
+}
+
+
+function pic08875Function() {
+    pic08875Hover.style.opacity = "1";
+    pic08875Hover.style.transition = "0.2s";
+}
+function pic08875FunctionOut() {
+    pic08875Hover.style.opacity = "0";
+    pic08875Hover.style.transition = "0.2s";
+}
+
+
+function pic03769Function() {
+    pic03769Hover.style.opacity = "1";
+    pic03769Hover.style.transition = "0.2s";
+}
+function pic03769FunctionOut() {
+    pic03769Hover.style.opacity = "0";
+    pic03769Hover.style.transition = "0.2s";
 }
 
 
