@@ -44,6 +44,8 @@ function adjustContent() {
             liege.style.width = "calc(90% + 20px)";
             abstand2.style.display = "block";
             abstand1.style.display = "block";
+            abstand3.style.display = "block";
+            abstand4.style.display = "block";
         });
 
         vertical.forEach(element => {
@@ -512,6 +514,44 @@ function pic03769Function() {
 function pic03769FunctionOut() {
     pic03769Hover.style.opacity = "0";
     pic03769Hover.style.transition = "0.2s";
+}
+
+
+function dsc02802Function() {
+    dsc02802Hover.style.opacity = "1";
+    dsc02802Hover.style.transition = "0.2s";
+}
+function dsc02802FunctionOut() {
+    dsc02802Hover.style.opacity = "0";
+    dsc02802Hover.style.transition = "0.2s";
+}
+
+
+function img00227Function() {
+    img00227Hover.style.opacity = "1";
+    img00227Hover.style.transition = "0.2s";
+}
+function img00227FunctionOut() {
+    img00227Hover.style.opacity = "0";
+    img00227Hover.style.transition = "0.2s";
+}
+
+
+function dsc02227Function() {
+    dsc02227Hover.style.opacity = "1";
+    dsc02227Hover.style.transition = "0.2s";
+}
+function dsc02227FunctionOut() {
+    dsc02227Hover.style.opacity = "0";
+    dsc02227Hover.style.transition = "0.2s";
+}
+
+
+function img06755Function() {
+    img06755Hover.style.opacity = "1";
+}
+function img06755FunctionOut() {
+    img06755Hover.style.opacity = "0";
 }
 
 
