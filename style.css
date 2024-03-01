@@ -34,6 +34,17 @@ body {
 
 #kategorien {
     font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.strich1 {
+    margin-top: 23px;
+    margin-bottom: 0px;
+}
+
+.strich2 {
+    margin-top: 3px;
 }
 
 h1 {
@@ -75,7 +86,9 @@ hr {
 #toC {
     display: flex;
     justify-content: center;
+    width: 100%;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .content {
@@ -87,8 +100,8 @@ hr {
     padding-right: 7px;
     border-radius: 5px;
     height: 28px;
-    margin-top: 0px;
-    margin-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: 0px;
 }
 
 #kreta {
@@ -97,13 +110,16 @@ hr {
 }
 
 #tocKreta {
-    background-color: #f4ebc4;
+    background-color: #fff1b2;
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 3px
 }
 
 #tocKreta:hover {
     background-color: #f0d460;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: -2px;
     margin-bottom: 0px;
     transition: 0.1s;
@@ -111,12 +127,15 @@ hr {
 
 #tocLondon {
     background-color: #ffb0ce;
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 3px
 }
 
 #tocLondon:hover {
     background-color: #ec8383;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: -2px;
     margin-bottom: 0px;
     transition: 0.1s;
@@ -124,12 +143,15 @@ hr {
 
 #tocWien {
     background-color: #c1dbee;
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 3px
 }
 
 #tocWien:hover {
     background-color: #87bfec;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: -2px;
     margin-bottom: 0px;
     transition: 0.1s;
@@ -137,12 +159,15 @@ hr {
 
 #tocNatur {
     background-color: #c9ecc2;
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 3px
 }
 
 #tocNatur:hover {
     background-color: #66dd98;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: -2px;
     margin-bottom: 0px;
     transition: 0.1s;
@@ -150,12 +175,15 @@ hr {
 
 #tocSonne {
     background-color: #f6d1aa;
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 3px
 }
 
 #tocSonne:hover {
     background-color: #f0a779;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: -2px;
     margin-bottom: 0px;
     transition: 0.1s;
@@ -163,12 +191,15 @@ hr {
 
 #tocTiere {
     background-color: #e3c8fa;
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 3px
 }
 
 #tocTiere:hover {
     background-color: #c0a3f9;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: -2px;
     margin-bottom: 0px;
     transition: 0.1s;
