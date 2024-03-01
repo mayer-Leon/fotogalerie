@@ -1,3 +1,38 @@
+function adjustContent() {
+    const windowWidth = window.innerWidth;
+    const horizontal = document.querySelectorAll(".horHor");
+    const vertical = document.querySelectorAll(".verVer");
+
+    let horizontalWidth;
+    let verticalWidth;
+
+    if (windowWidth <= 480) {
+        horizontalWidth = "95%";
+        verticalWidth = "95%";
+    } else if (windowWidth <= 768) {
+        horizontalWidth = "90%";
+        verticalWidth = "90%";
+    } else if (windowWidth <= 1900) {
+        horizontalWidth = "45%";
+    } else {
+        horizontalWidth = "30%";
+        document.getElementById("liege").style.width = "calc(90% + 20px)";
+        document.getElementById("abstand2").style.display = "block";
+        document.getElementById("abstand1").style.display = "block";
+        document.getElementById("abstand3").style.display = "block";
+        document.getElementById("abstand4").style.display = "block";
+    }
+
+    horizontal.forEach(element => {
+        element.style.width = horizontalWidth;
+    });
+
+    vertical.forEach(element => {
+        element.style.width = verticalWidth || "calc(20% - 3px)";
+    });
+}
+
+
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   }
@@ -7,52 +42,6 @@ function changeContentForMobile() {
       desktopMobile.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
       großerBildschirm.style.display = "block";
     }
-}
-
-function adjustContent() {
-    let windowWidth = window.innerWidth;
-    let horizontal = document.querySelectorAll(".horHor");
-    let vertical = document.querySelectorAll(".verVer");
-
-    
-    if (windowWidth <= 480) {
-        horizontal.forEach(element => {
-            element.style.width = "95%";
-            liege.style.width = "95%";
-        });
-
-        vertical.forEach(element => {
-            element.style.width = "95%";
-        });
-    } else if (windowWidth > 480 && windowWidth <= 768) {
-        horizontal.forEach(element => {
-            element.style.width = "90%";
-            liege.style.width = "90%";
-        });
-
-        vertical.forEach(element => {
-            element.style.width = "90%";
-        });
-    } else if (windowWidth > 768 && windowWidth <= 1900) {
-        horizontal.forEach(element => {
-            element.style.width = "45%";
-            referenceElement.parentNode.insertBefore(elementToMove, referenceElement);
-        });
-    } else {
-        horizontal.forEach(element => {
-            element.style.width = "30%";
-            liege.style.width = "calc(90% + 20px)";
-            abstand2.style.display = "block";
-            abstand1.style.display = "block";
-            abstand3.style.display = "block";
-            abstand4.style.display = "block";
-        });
-
-        vertical.forEach(element => {
-            element.style.width = "calc(20% - 3px)";
-        });
-    }
-    
 }
 
 
