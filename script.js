@@ -51,7 +51,6 @@ function isMobileDevice() {
 function changeContentForMobile() {
     if (isMobileDevice()) {
       desktopMobile.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
-      großerBildschirm.style.display = "block";
     }
 }
 
