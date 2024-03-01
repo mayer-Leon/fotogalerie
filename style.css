@@ -10,6 +10,7 @@ body {
     margin-right: 0;
     margin-bottom: 0;
     zoom: 95%;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -29,6 +30,10 @@ body {
     height: 120px;
     margin-top: 20px;
     margin-bottom: 25px;
+}
+
+#kategorien {
+    font-weight: 500;
 }
 
 h1 {
@@ -65,6 +70,108 @@ hr {
     width: 85%;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+#toC {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content {
+    font-size: 1.1rem;
+    font-weight: 500;
+    stroke-width: 1px;
+    color: black;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    height: 28px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+#kreta {
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+
+#tocKreta {
+    background-color: #f4ebc4;
+}
+
+#tocKreta:hover {
+    background-color: #f0d460;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+}
+
+#tocLondon {
+    background-color: #ffb0ce;
+}
+
+#tocLondon:hover {
+    background-color: #ec8383;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+}
+
+#tocWien {
+    background-color: #c1dbee;
+}
+
+#tocWien:hover {
+    background-color: #87bfec;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+}
+
+#tocNatur {
+    background-color: #c9ecc2;
+}
+
+#tocNatur:hover {
+    background-color: #66dd98;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+}
+
+#tocSonne {
+    background-color: #f6d1aa;
+}
+
+#tocSonne:hover {
+    background-color: #f0a779;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+}
+
+#tocTiere {
+    background-color: #e3c8fa;
+}
+
+#tocTiere:hover {
+    background-color: #c0a3f9;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    transition: 0.1s;
 }
 
 .twoRow {
