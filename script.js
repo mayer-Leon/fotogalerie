@@ -635,6 +635,10 @@ document.querySelectorAll('#toC a').forEach(anchor => {
     });
   });
 
+function fullScreen() {
+    alert("Diese Funktion ist bald verfügbar!");
+} 
+
 changeContentForMobile();
 window.onload = adjustContent;
 window.onresize = adjustContent;

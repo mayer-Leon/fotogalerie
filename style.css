@@ -38,6 +38,12 @@ body {
     margin-bottom: 10px;
 }
 
+hr {
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .strich1 {
     margin-top: 23px;
     margin-bottom: 0px;
@@ -75,12 +81,6 @@ h3 {
 p {
     font-size: 1.15rem;
     margin-top: 10px;
-}
-
-hr {
-    width: 85%;
-    margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 #toC {
@@ -295,6 +295,33 @@ img {
     margin-top: 10%;
 }
 
+.fullScreen {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #ffffff44;
+    border-width: 0px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding-top: 4px;
+    right: 2%;
+    bottom: 2%;
+}
+
+.fullScreen:hover {
+    cursor: pointer;
+    background-color: #ffffffbe;
+    color: #000000;
+    transition: 0.4s;
+}
+
+.fullScreen:active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .copyright {
     width: 90%;
     height: 20px;
@@ -302,6 +329,7 @@ img {
     font-weight: 400;
     font-size: 1rem;
     margin-top: 10%;
+    margin-bottom: 7%;
 }
 
 #deactivateButton, #activateButton {
