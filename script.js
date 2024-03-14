@@ -2,12 +2,17 @@ function adjustContent() {
     let windowWidth = window.innerWidth;
     let horizontal = document.querySelectorAll(".horHor");
     let vertical = document.querySelectorAll(".verVer");
+    let fullScreenButton = document.querySelectorAll(".fullScreen");
 
     
     if (windowWidth <= 480) {
         horizontal.forEach(element => {
             element.style.width = "95%";
             liege.style.width = "95%";
+        });
+
+        fullScreenButton.forEach(element => {
+            element.style.display = "none";
         });
 
         vertical.forEach(element => {
@@ -17,6 +22,10 @@ function adjustContent() {
         horizontal.forEach(element => {
             element.style.width = "90%";
             liege.style.width = "90%";
+        });
+
+        fullScreenButton.forEach(element => {
+            element.style.display = "none";
         });
 
         vertical.forEach(element => {
@@ -548,62 +557,123 @@ function dsc02227FunctionOut() {
 
 function img06755Function() {
     img06755Hover.style.opacity = "1";
-    img06755Hover.style.transition = "0.2s"
+    img06755Hover.style.transition = "0.2s";
 }
 function img06755FunctionOut() {
     img06755Hover.style.opacity = "0";
-    img06755Hover.style.transition = "0.2s"
+    img06755Hover.style.transition = "0.2s";
 }
 
 
 function img06954Function() {
     img06954Hover.style.opacity = "1";
-    img06954Hover.style.transition = "0.2s"
+    img06954Hover.style.transition = "0.2s";
 }
 function img06954FunctionOut() {
     img06954Hover.style.opacity = "0";
-    img06954Hover.style.transition = "0.2s"
+    img06954Hover.style.transition = "0.2s";
 }
 
 
 function img01974Function() {
     img01974Hover.style.opacity = "1";
-    img01974Hover.style.transition = "0.2s"
+    img01974Hover.style.transition = "0.2s";
 }
 function img01974FunctionOut() {
     img01974Hover.style.opacity = "0";
-    img01974Hover.style.transition = "0.2s"
+    img01974Hover.style.transition = "0.2s";
 }
 
 
 function img00640Function() {
     img00640Hover.style.opacity = "1";
-    img00640Hover.style.transition = "0.2s"
+    img00640Hover.style.transition = "0.2s";
 }
 function img00640FunctionOut() {
     img00640Hover.style.opacity = "0";
-    img00640Hover.style.transition = "0.2s"
+    img00640Hover.style.transition = "0.2s";
 }
 
 
 function img06341Function() {
     img06341Hover.style.opacity = "1";
-    img06341Hover.style.transition = "0.2s"
+    img06341Hover.style.transition = "0.2s";
 }
 function img06341FunctionOut() {
     img06341Hover.style.opacity = "0";
-    img06341Hover.style.transition = "0.2s"
+    img06341Hover.style.transition = "0.2s";
 }
 
 
 function pic03031Function() {
     pic03031Hover.style.opacity = "1";
-    pic03031Hover.style.transition = "0.2s"
+    pic03031Hover.style.transition = "0.2s";
 }
 function pic03031FunctionOut() {
     pic03031Hover.style.opacity = "0";
-    pic03031Hover.style.transition = "0.2s"
+    pic03031Hover.style.transition = "0.2s";
 }
+
+
+function img20240033Function() {
+    img20240033Hover.style.opacity = "1";
+    img20240033Hover.style.transition = "0.2s";
+}
+function img20240033FunctionOut() {
+    img20240033Hover.style.opacity = "0";
+    img20240033Hover.style.transition = "0.2s";
+}
+
+
+function img20240048Function() {
+    img20240048Hover.style.opacity = "1";
+    img20240048Hover.style.transition = "0.2s";
+}
+function img20240048FunctionOut() {
+    img20240048Hover.style.opacity = "0";
+    img20240048Hover.style.transition = "0.2s";
+}
+
+
+function img20240030Function() {
+    img20240030Hover.style.opacity = "1";
+    img20240030Hover.style.transition = "0.2s";
+}
+function img20240030FunctionOut() {
+    img20240030Hover.style.opacity = "0";
+    img20240030Hover.style.transition = "0.2s";
+}
+
+
+function img20240049Function() {
+    img20240049Hover.style.opacity = "1";
+    img20240049Hover.style.transition = "0.2s";
+}
+function img20240049FunctionOut() {
+    img20240049Hover.style.opacity = "0";
+    img20240049Hover.style.transition = "0.2s";
+}
+
+
+function img20240050Function() {
+    img20240050Hover.style.opacity = "1";
+    img20240050Hover.style.transition = "0.2s";
+}
+function img20240050FunctionOut() {
+    img20240050Hover.style.opacity = "0";
+    img20240050Hover.style.transition = "0.2s";
+}
+
+
+function img04345Function() {
+    img04345Hover.style.opacity = "1";
+    img04345Hover.style.transition = "0.2s";
+}
+function img04345FunctionOut() {
+    img04345Hover.style.opacity = "0";
+    img04345Hover.style.transition = "0.2s";
+}
+
 
 
 
@@ -613,6 +683,11 @@ function deactivateHover() {
         element.style.backgroundColor = "transparent";
         element.style.color = "transparent";
     });
+
+    document.querySelectorAll(".fullScreen").forEach(element => {
+        element.style.backgroundColor = "#b5b5b5ea";
+    });
+
     desktopMobile.style.display = "none";
     deactivateButton.style.display = "none";
     activateButton.style.display = "inline";
@@ -635,10 +710,127 @@ document.querySelectorAll('#toC a').forEach(anchor => {
     });
   });
 
+  document.querySelectorAll('#toC1 a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default behavior of anchor tag
+      const targetId = this.getAttribute('href').substring(1); // Get the id of the target section
+      const targetElement = document.getElementById(targetId); // Find the target element
+      if (targetElement) {
+        // Scroll to the target element smoothly
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  let scrollButton = document.getElementById("scrollToTopButton");
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {
+        scrollButton.style.opacity = "1";
+        scrollButton.style.transition = "0.5s";
+    } else {
+        scrollButton.style.opacity = "0";
+        scrollButton.style.transition = "0.5s";
+    }
+  };
+  
 function fullScreen() {
     alert("Diese Funktion ist bald verfügbar!");
-} 
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  fullScreenGalerie.style.display = "inline";
+  fullScreenGalerie.requestFullscreen();
+  document.title = "Einzelansicht";
+  scrollTop =
+  window.pageYOffset ||
+  document.documentElement.scrollTop;
+scrollLeft =
+  window.pageXOffset ||
+  document.documentElement.scrollLeft,
+
+  // if any scroll is attempted,
+  // set this to the previous value
+  window.onscroll = function () {
+      window.scrollTo(scrollLeft, scrollTop);
+  };
+}
+
+var closeButton = document.getElementById("close");
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "flex";
+    dots[slideIndex-1].className += " active";
+}
+
+function closeGalerie() {
+    fullScreenGalerie.style.display = "none";
+    window.reload;
+    document.title = "Fotogalerie Leon Mayer";
+    window.onscroll = function () {};
+    document.exitFullscreen();
+}
 
 changeContentForMobile();
 window.onload = adjustContent;
 window.onresize = adjustContent;
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      prev.click();
+    }
+  });
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      next.click();
+    }
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "a") {
+      event.preventDefault();
+      prev.click();
+    }
+  });
+
+  window.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+      if (window.fullscreenElement) {
+        window.exitFullscreen();
+        closeButton.click();
+      }
+    }
+  });
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "d") {
+      event.preventDefault();
+      next.click();
+    }
+  });
