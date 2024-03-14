@@ -352,7 +352,7 @@ img {
     flex-wrap: wrap;
 }
 
-.metaData, .content, #scrollToTopButton {    
+.metaData, .content, #scrollToTopButton, #arrowUp {    
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
