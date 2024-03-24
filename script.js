@@ -11,10 +11,6 @@ function adjustContent() {
             liege.style.width = "95%";
         });
 
-        fullScreenButton.forEach(element => {
-            element.style.display = "none";
-        });
-
         vertical.forEach(element => {
             element.style.width = "95%";
         });
@@ -59,7 +55,7 @@ function isMobileDevice() {
 
 function changeContentForMobile() {
     if (isMobileDevice()) {
-      desktopMobile3.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
+      desktopMobile.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
     }
 }
 
