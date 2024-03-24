@@ -20,6 +20,7 @@ function adjustContent() {
             element.style.fontSize = "1.4rem";
         });
 
+        unnötigerText.style.display = "none";
 
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
@@ -39,6 +40,8 @@ function adjustContent() {
             element.style.fontSize = "1.4rem";
         });
 
+        unnötigerText.style.display = "none";
+        topic.style.marginTop = "0px";
 
     } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
