@@ -3,6 +3,7 @@ function adjustContent() {
     let horizontal = document.querySelectorAll(".horHor");
     let vertical = document.querySelectorAll(".verVer");
     let fullScreenButton = document.querySelectorAll(".fullScreen");
+    let topic = document.querySelectorAll(".topic");
 
     
     if (windowWidth <= 480) {
@@ -14,6 +15,12 @@ function adjustContent() {
         vertical.forEach(element => {
             element.style.width = "95%";
         });
+
+        topic.forEach(element => {
+            element.style.fontSize = "1.4rem";
+        });
+
+
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
             element.style.width = "90%";
@@ -27,6 +34,12 @@ function adjustContent() {
         vertical.forEach(element => {
             element.style.width = "90%";
         });
+
+        topic.forEach(element => {
+            element.style.fontSize = "1.4rem";
+        });
+
+
     } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
             element.style.width = "45%";
@@ -55,7 +68,7 @@ function isMobileDevice() {
 
 function changeContentForMobile() {
     if (isMobileDevice()) {
-      desktopMobile.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
+      desktopMobile.style.color = "#ffffff";
     }
 }
 
