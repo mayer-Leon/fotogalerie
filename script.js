@@ -59,7 +59,7 @@ function isMobileDevice() {
 
 function changeContentForMobile() {
     if (isMobileDevice()) {
-      desktopMobile.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
+      desktopMobile3.innerHTML = 'Klick auf Fotos um ihre Kameraeinstellungen zu sehen.';
     }
 }
 
