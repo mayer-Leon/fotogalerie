@@ -2,8 +2,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #151515;
-    color: #ffffff;
+    background-color: #c6c6c6;
+    color: #000000;
     align-self: center;
     text-align: center;
     margin-left: 0;
@@ -23,14 +23,14 @@ body {
     margin: auto;
     bottom: 10px;
     z-index: 4;
-    background-color: #313131;
+    background-color: #cecece;
     width: 60px;
     height: 40px;
     font-size: 20px;
     font-weight: 900;
     right: calc(50% - 30px);
 
-    box-shadow: 2px 3px #ffffff;
+    box-shadow: 2px 3px #000000;
     border-radius: 10px;
     opacity: 0;
 }
@@ -576,7 +576,7 @@ body {
     font-size: 25px;
     font-weight: 600;
     color: white;
-    background-color: #ffffff44;
+    background-color: #00000000;
     border-width: 0px;
     border-radius: 8px;
     padding-top: 4px;
@@ -586,8 +586,7 @@ body {
 }
 
 #close:hover {
-    background-color: #eaeaea;
-    color: black;
+    background-color: #ffffff44;
     transition: 0.4s;
 }
 
@@ -599,7 +598,7 @@ body {
     padding: 16px;
     margin-top: -50px;
     color: white;
-    background-color: #545454d6;
+    background-color: #00000000;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -608,7 +607,7 @@ body {
 }
 
 #prev:hover, #next:hover {
-    background-color: #929191d6;
+    background-color: #545454d6;
     transition: 0.2s;
 }
 
