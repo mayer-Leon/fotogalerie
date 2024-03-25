@@ -75,6 +75,10 @@ function changeContentForMobile() {
     }
 }
 
+changeContentForMobile();
+window.onload = adjustContent;
+window.onresize = adjustContent;
+
 
 function pic03587Function() {
     pic03587Hover.style.opacity = "1";
@@ -805,10 +809,6 @@ function closeGalerie() {
     window.onscroll = function () {};
     document.exitFullscreen();
 }
-
-changeContentForMobile();
-window.onload = adjustContent;
-window.onresize = adjustContent;
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowLeft") {
