@@ -26,12 +26,6 @@ window.onresize = adjustContent;
             element.style.fontSize = "1.4rem";
         });
 
-        welcome.forEach(element => {
-            element.style.fontSize = "1.2rem";
-        });
-
-        unnötigerText.style.display = "none";
-
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
             element.style.width = "90%";
@@ -46,11 +40,6 @@ window.onresize = adjustContent;
             element.style.fontSize = "1.4rem";
         });
 
-        welcome.forEach(element => {
-            element.style.fontSize = "1.2rem";
-        });
-
-        unnötigerText.style.display = "none";
         topic.style.marginTop = "0px";
 
     } else if (windowWidth > 768 && windowWidth <= 1900) {
@@ -58,6 +47,12 @@ window.onresize = adjustContent;
             element.style.width = "45%";
             referenceElement.parentNode.insertBefore(elementToMove, referenceElement);
         });
+
+        welcome.forEach(element => {
+            element.style.fontSize = "1.5rem";
+        });
+
+        unnötigerText.style.display = "inline-block";
     } else {
         horizontal.forEach(element => {
             element.style.width = "30%";
@@ -71,6 +66,12 @@ window.onresize = adjustContent;
         vertical.forEach(element => {
             element.style.width = "calc(20% - 3px)";
         });
+
+        welcome.forEach(element => {
+            element.style.fontSize = "1.5rem";
+        });
+
+        unnötigerText.style.display = "inline-block";
     }
     
 }

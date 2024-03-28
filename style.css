@@ -36,12 +36,12 @@ body {
 }
 
 .welcome {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
 #unnötigerText {
-    display: inline-block;
+    display: none;
     margin-bottom: 20px;
     font-size: 1.15rem;
     font-weight: 400;
