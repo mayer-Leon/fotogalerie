@@ -4,8 +4,14 @@ function adjustContent() {
     let vertical = document.querySelectorAll(".verVer");
     let fullScreenButton = document.querySelectorAll(".fullScreen");
     let topic = document.querySelectorAll(".topic");
+    let welcome = document.querySelectorAll(".welcome");
 
     
+
+changeContentForMobile();
+window.onload = adjustContent;
+window.onresize = adjustContent;
+
     if (windowWidth <= 480) {
         horizontal.forEach(element => {
             element.style.width = "95%";
@@ -20,6 +26,10 @@ function adjustContent() {
             element.style.fontSize = "1.4rem";
         });
 
+        welcome.forEach(element => {
+            element.style.fontSize = "1.2rem";
+        });
+
         unnötigerText.style.display = "none";
 
     } else if (windowWidth > 480 && windowWidth <= 768) {
@@ -28,16 +38,16 @@ function adjustContent() {
             liege.style.width = "90%";
         });
 
-        fullScreenButton.forEach(element => {
-            element.style.display = "none";
-        });
-
         vertical.forEach(element => {
             element.style.width = "90%";
         });
 
         topic.forEach(element => {
             element.style.fontSize = "1.4rem";
+        });
+
+        welcome.forEach(element => {
+            element.style.fontSize = "1.2rem";
         });
 
         unnötigerText.style.display = "none";
