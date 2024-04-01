@@ -702,7 +702,9 @@ function img04345FunctionOut() {
 }
 
 
-
+function playAudio(url) {
+    new Audio(url).play();
+}
 
 
 function deactivateHover() {

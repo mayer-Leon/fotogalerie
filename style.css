@@ -229,6 +229,27 @@ p {
     transition: 0.1s;
 }
 
+#aufnahmeinfos {
+    color: white;
+    background-color: #313131;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 35px;
+    border-style: none;
+    color: transparent;  
+    text-shadow: 0 0 0 rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+#aufnahmeinfos:hover {
+    background-color: black;
+    transition: 0.4s;
+}
+
+#aufnahmeinfos:active {
+    background-color: #ffffff;
+}
+
 #tocWien {
     background-color: #c1dbee;
     width: auto;
