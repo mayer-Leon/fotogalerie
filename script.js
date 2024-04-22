@@ -45,7 +45,8 @@ window.onresize = adjustContent;
     } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
             element.style.width = "45%";
-            referenceElement.parentNode.insertBefore(elementToMove, referenceElement);
+            referenceElementOne.parentElement.insertBefore(elementToMoveOne, referenceElementOne);
+            referenceElementTwo.parentElement.insertBefore(elementToMoveTwo, referenceElementTwo);
         });
 
         welcome.forEach(element => {
@@ -689,6 +690,36 @@ function img20240050Function() {
 function img20240050FunctionOut() {
     img20240050Hover.style.opacity = "0";
     img20240050Hover.style.transition = "0.2s";
+}
+
+
+function img20240129Function() {
+    img20240129Hover.style.opacity = "1";
+    img20240129Hover.style.transition = "0.2s";
+}
+function img20240129FunctionOut() {
+    img20240129Hover.style.opacity = "0";
+    img20240129Hover.style.transition = "0.2s";
+}
+
+
+function img20240157Function() {
+    img20240157Hover.style.opacity = "1";
+    img20240157Hover.style.transition = "0.2s";
+}
+function img20240157FunctionOut() {
+    img20240157Hover.style.opacity = "0";
+    img20240157Hover.style.transition = "0.2s";
+}
+
+
+function img20240160Function() {
+    img20240160Hover.style.opacity = "1";
+    img20240160Hover.style.transition = "0.2s";
+}
+function img20240160FunctionOut() {
+    img20240160Hover.style.opacity = "0";
+    img20240160Hover.style.transition = "0.2s";
 }
 
 
