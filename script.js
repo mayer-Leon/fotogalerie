@@ -1,5 +1,6 @@
 function adjustContent() {
     let windowWidth = window.innerWidth;
+    let windowHeight = window.innerHeight;
     let horizontal = document.querySelectorAll(".horHor");
     let vertical = document.querySelectorAll(".verVer");
     let fullScreenButton = document.querySelectorAll(".fullScreen");
@@ -7,6 +8,7 @@ function adjustContent() {
     let welcome = document.querySelectorAll(".welcome");
 
     
+
 
 changeContentForMobile();
 window.onload = adjustContent;
@@ -810,7 +812,9 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    alert("Diese Funktion ist bald wieder verfügbar.")
+
+  /*showSlides(slideIndex = n);
   fullScreenGalerie.style.display = "inline";
   fullScreenGalerie.requestFullscreen();
   document.title = "Einzelansicht";
@@ -825,7 +829,7 @@ scrollLeft =
   // set this to the previous value
   window.onscroll = function () {
       window.scrollTo(scrollLeft, scrollTop);
-  };
+  };*/
 }
 
 var closeButton = document.getElementById("close");
