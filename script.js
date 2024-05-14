@@ -812,9 +812,7 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-    alert("Diese Funktion ist bald wieder verfügbar.")
-
-  /*showSlides(slideIndex = n);
+  showSlides(slideIndex = n);
   fullScreenGalerie.style.display = "inline";
   fullScreenGalerie.requestFullscreen();
   document.title = "Einzelansicht";
@@ -829,7 +827,7 @@ scrollLeft =
   // set this to the previous value
   window.onscroll = function () {
       window.scrollTo(scrollLeft, scrollTop);
-  };*/
+  };
 }
 
 var closeButton = document.getElementById("close");
