@@ -6,7 +6,7 @@ function adjustContent() {
     let fullScreenButton = document.querySelectorAll(".fullScreen");
     let topic = document.querySelectorAll(".topic");
     let welcome = document.querySelectorAll(".welcome");
-
+    let images = documentElement.querySelectorAll("img");
     
 
 
@@ -32,6 +32,10 @@ window.onresize = adjustContent;
             element.style.display = "none";
         });
 
+        images.forEach(element => {
+            element.style.borderRadius = "26px";
+        });
+
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
             element.style.width = "90%";
@@ -48,6 +52,10 @@ window.onresize = adjustContent;
 
         fullScreenButton.forEach(element => {
             element.style.display = "none";
+        });
+
+        images.forEach(element => {
+            element.style.borderRadius = "26px";
         });
 
         topic.style.marginTop = "0px";
