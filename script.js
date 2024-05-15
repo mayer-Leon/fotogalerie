@@ -28,6 +28,10 @@ window.onresize = adjustContent;
             element.style.fontSize = "1.4rem";
         });
 
+        fullScreenButton.forEach(element => {
+            element.style.display = "none";
+        });
+
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
             element.style.width = "90%";
@@ -40,6 +44,10 @@ window.onresize = adjustContent;
 
         topic.forEach(element => {
             element.style.fontSize = "1.4rem";
+        });
+
+        fullScreenButton.forEach(element => {
+            element.style.display = "none";
         });
 
         topic.style.marginTop = "0px";
