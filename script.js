@@ -6,7 +6,7 @@ function adjustContent() {
     let fullScreenButton = document.querySelectorAll(".fullScreen");
     let topic = document.querySelectorAll(".topic");
     let welcome = document.querySelectorAll(".welcome");
-    let images = documentElement.querySelectorAll("img");
+    let images = document.querySelectorAll('img');
     
 
 
@@ -33,7 +33,7 @@ window.onresize = adjustContent;
         });
 
         images.forEach(element => {
-            element.style.borderRadius = "26px";
+            element.style.borderRadius = "6px";
         });
 
     } else if (windowWidth > 480 && windowWidth <= 768) {
@@ -55,7 +55,7 @@ window.onresize = adjustContent;
         });
 
         images.forEach(element => {
-            element.style.borderRadius = "26px";
+            element.style.borderRadius = "6px";
         });
 
         topic.style.marginTop = "0px";
