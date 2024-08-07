@@ -28,10 +28,6 @@ window.onresize = adjustContent;
             element.style.fontSize = "1.4rem";
         });
 
-        fullScreenButton.forEach(element => {
-            element.style.display = "none";
-        });
-
         images.forEach(element => {
             element.style.borderRadius = "6px";
         });
@@ -48,10 +44,6 @@ window.onresize = adjustContent;
 
         topic.forEach(element => {
             element.style.fontSize = "1.4rem";
-        });
-
-        fullScreenButton.forEach(element => {
-            element.style.display = "none";
         });
 
         images.forEach(element => {
@@ -99,12 +91,6 @@ window.onresize = adjustContent;
 
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-  }
-
-function changeContentForMobile() {
-    if (isMobileDevice()) {
-      desktopMobile.style.color = "#ffffff";
-    }
 }
 
 changeContentForMobile();
@@ -130,7 +116,7 @@ function deactivateHover() {
     desktopMobile.style.display = "none";
     deactivateButton.style.display = "none";
     activateButton.style.display = "inline";
-    desktopMovbileClick.style.marginTop = "16px";
+    desktopMobileClick.style.marginTop = "16px";
 }
 
 function activateHover() {
