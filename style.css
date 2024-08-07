@@ -198,14 +198,14 @@ p {
 }
 
 #tocGriechenland {
-    background-color: hsl(145, 100%, 85%);
+    background-color: #97f5dc;
     width: auto;
     padding-top: 1px;
     padding-bottom: 3px
 }
 
 #tocGriechenland:hover {
-    background-color: hsl(165, 100%, 67%);
+    background-color: #75ffda;
     padding-top: 4px;
     padding-bottom: 4px;
     margin-top: -2px;
@@ -290,7 +290,7 @@ p {
 }
 
 #tocNatur:hover {
-    background-color: #66dd98;
+    background-color: #91f179;
     padding-top: 4px;
     padding-bottom: 4px;
     margin-top: -2px;
@@ -733,7 +733,7 @@ body {
 }
 
 .sGriechenland {
-    color: #8affc8;
+    color: #75ffda;
 }
 
 .sFrühling {
