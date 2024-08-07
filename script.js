@@ -3,7 +3,6 @@ function adjustContent() {
     let windowHeight = window.innerHeight;
     let horizontal = document.querySelectorAll(".horHor");
     let vertical = document.querySelectorAll(".verVer");
-    let fullScreenButton = document.querySelectorAll(".fullScreen");
     let topic = document.querySelectorAll(".topic");
     let welcome = document.querySelectorAll(".welcome");
     let images = document.querySelectorAll('img');
@@ -91,6 +90,12 @@ window.onresize = adjustContent;
 
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+function changeContentForMobile() {
+    if (isMobileDevice()) {
+      desktopMobile.style.color = "#ffffff";
+    }
 }
 
 changeContentForMobile();
@@ -116,7 +121,7 @@ function deactivateHover() {
     desktopMobile.style.display = "none";
     deactivateButton.style.display = "none";
     activateButton.style.display = "inline";
-    desktopMobileClick.style.marginTop = "16px";
+    desktopMovbileClick.style.marginTop = "16px";
 }
 
 function activateHover() {
