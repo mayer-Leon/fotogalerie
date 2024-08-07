@@ -80,6 +80,8 @@ window.onresize = adjustContent;
             abstand1.style.display = "block";
             abstand3.style.display = "block";
             abstand4.style.display = "block";
+            abstand6.style.display = "block";
+            abstand5.style.display = "block";
         });
 
         vertical.forEach(element => {

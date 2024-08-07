@@ -197,6 +197,22 @@ p {
     -webkit-transition: all 0.6s ease;
 }
 
+#tocGriechenland {
+    background-color: hsl(145, 100%, 85%);
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 3px
+}
+
+#tocGriechenland:hover {
+    background-color: hsl(165, 100%, 67%);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+}
+
 #tocKreta {
     background-color: #fff1b2;
     width: auto;
@@ -350,7 +366,7 @@ p {
     margin-bottom: 0px;
 }
 
-#abstand1, #abstand2, #abstand4, #abstand3 {
+#abstand1, #abstand2, #abstand4, #abstand3, #abstand5, #abstand6 {
     width: 10%;
     position: relative;
     margin-bottom: 0px;
@@ -714,6 +730,10 @@ body {
 
 .sTiere {
     color: #d1a8f5;
+}
+
+.sGriechenland {
+    color: #8affc8;
 }
 
 .sFrühling {
