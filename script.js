@@ -3,12 +3,26 @@ function adjustContent() {
     let windowHeight = window.innerHeight;
     let horizontal = document.querySelectorAll(".horHor");
     let vertical = document.querySelectorAll(".verVer");
+    let fullScreenButton = document.querySelectorAll(".fullScreen");
     let topic = document.querySelectorAll(".topic");
     let welcome = document.querySelectorAll(".welcome");
     let images = document.querySelectorAll('img');
-    let fullScreenButton = document.querySelectorAll('fullScreen');
     
-
+document.addEventListener("keydown", function(event) {
+    event.preventDefault();
+    if (event.key === "ArrowLeft" || event.key === "a") {
+        prev.click();
+    }
+    else if (event.key === "ArrowRight" || event.key === "d") {
+        next.click();
+    }
+    else if (event.key === "Escape") {
+        if (window.fullscreenElement) {
+            window.exitFullscreen();
+            closeGalerie();
+        }
+    }
+});
 
 changeContentForMobile();
 window.onload = adjustContent;
@@ -27,14 +41,18 @@ window.onresize = adjustContent;
         topic.forEach(element => {
             element.style.fontSize = "1.4rem";
         });
-
         images.forEach(element => {
             element.style.borderRadius = "6px";
         });
-
-        fullScreenButton.forEach(element => {
-            element.style.display = "none";
-        })
+        
+        horizontal.forEach(element => {
+            abstand2.style.display = "none";
+            abstand1.style.display = "none";
+            abstand3.style.display = "none";
+            abstand4.style.display = "none";
+            abstand5.style.display = "none";
+            abstand6.style.display = "none";
+        });
 
     } else if (windowWidth > 480 && windowWidth <= 768) {
         horizontal.forEach(element => {
@@ -54,11 +72,17 @@ window.onresize = adjustContent;
             element.style.borderRadius = "6px";
         });
 
-        fullScreenButton.forEach(element => {
-            element.style.display = "none";
-        })
-
         topic.style.marginTop = "0px";
+        
+        horizontal.forEach(element => {
+            abstand2.style.display = "none";
+            abstand1.style.display = "none";
+            abstand3.style.display = "none";
+            abstand4.style.display = "none";
+            abstand5.style.display = "none";
+            abstand6.style.display = "none";
+        });
+
 
     } else if (windowWidth > 768 && windowWidth <= 1900) {
         horizontal.forEach(element => {
@@ -70,8 +94,17 @@ window.onresize = adjustContent;
         welcome.forEach(element => {
             element.style.fontSize = "1.5rem";
         });
+        
+        horizontal.forEach(element => {
+            abstand2.style.display = "block";
+            abstand1.style.display = "block";
+            abstand3.style.display = "block";
+            abstand4.style.display = "block";
+            abstand5.style.display = "block";
+            abstand6.style.display = "block";
+        });
 
-        unnötigerText.style.display = "inline-block";
+
     } else {
         horizontal.forEach(element => {
             element.style.width = "30%";
@@ -80,8 +113,8 @@ window.onresize = adjustContent;
             abstand1.style.display = "block";
             abstand3.style.display = "block";
             abstand4.style.display = "block";
-            abstand6.style.display = "block";
             abstand5.style.display = "block";
+            abstand6.style.display = "block";
         });
 
         vertical.forEach(element => {
@@ -91,11 +124,12 @@ window.onresize = adjustContent;
         welcome.forEach(element => {
             element.style.fontSize = "1.5rem";
         });
-
-        unnötigerText.style.display = "inline-block";
-    }
     
-}
+}}
+
+changeContentForMobile();
+window.onload = adjustContent;
+window.onresize = adjustContent;
 
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
@@ -175,76 +209,67 @@ document.querySelectorAll('#toC a').forEach(anchor => {
     }
   };
   
-function fullScreen() {
+function comingSoon() {
     alert("Diese Funktion ist bald verfügbar!");
-}
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-  fullScreenGalerie.style.display = "inline";
-  fullScreenGalerie.requestFullscreen();
-  document.title = "Einzelansicht";
-  scrollTop =
-  window.pageYOffset ||
-  document.documentElement.scrollTop;
-scrollLeft =
-  window.pageXOffset ||
-  document.documentElement.scrollLeft,
-
-  // if any scroll is attempted,
-  // set this to the previous value
-  window.onscroll = function () {
-      window.scrollTo(scrollLeft, scrollTop);
-  };
-}
-
-var closeButton = document.getElementById("close");
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("demo");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "flex";
-    dots[slideIndex-1].className += " active";
 }
 
 function closeGalerie() {
     fullScreenGalerie.style.display = "none";
-    window.reload;
-    document.title = "Fotogalerie Leon Mayer";
-    window.onscroll = function () {};
-    document.exitFullscreen();
+    window.onscroll = null;
+    document.body.style.overflow = '';
+    scrollToTopButton.style.display = "inline";
 }
 
-document.addEventListener("keydown", function(event) {
-    event.preventDefault();
-    if (event.key === "ArrowLeft" || event.key === "a") {
-      prev.click();
-    }
-    else if (event.key === "ArrowRight" || event.key === "d") {
-      next.click();
-    }
-    else if (event.key === "Escape") {
-      if (window.fullscreenElement) {
-        closeButton.click();
-        window.exitFullscreen();
-      }
-    }
-});
+var slideIndex = 1;
+
+function currentSlide(n) {
+
+
+  showSlides(slideIndex = n);
+
+  var fullScreenGalerie = document.getElementById('fullScreenGalerie');
+  var slides = fullScreenGalerie.getElementsByClassName('mySlides');
+
+
+  if (slides.length === 0) {
+    console.error("No elements found with class 'mySlides'");
+    return;
+  }
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  if (n > slides.length) { n = 1; }
+  if (n < 1) { n = slides.length; }
+
+  slides[n - 1].style.display = "block";
+  fullScreenGalerie.style.display = "inline";
+
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+  window.onscroll = function() {
+    window.scrollTo(scrollLeft, scrollTop);
+  };
+
+  scrollToTopButton.style.display = "none";
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var fullScreenGalerie = document.getElementById('fullScreenGalerie');
+  var slides = fullScreenGalerie.getElementsByClassName('mySlides');
+
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+}
